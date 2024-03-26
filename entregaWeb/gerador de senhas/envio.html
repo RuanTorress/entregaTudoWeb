@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/envio.css">
+  <script src="js/scripts.js"></script>
+
+</head>
+<body>
+  <div id="register-container">
+    <div id="register-banner">
+      <div id="banner-layer">
+        <h1>Seja bem-vindo</h1>
+        
+      </div>
+    </div>
+    <form id="register-form">
+      <h2>Entrega de Item:</h2>
+      <p>Informe o destino e simule a entrega:</p>
+      <div class="form-control">
+        <label for="current-location">Destino Atual</label>
+        <input
+          type="text"
+          name="current-location"
+          id="current-location"
+          placeholder="Digite o destino atual"
+        />
+      </div>
+      <div class="form-control">
+        <label for="final-destination">Destino Final</label>
+        <input
+          type="text"
+          name="final-destination"
+          id="final-destination"
+          placeholder="Digite o destino final"
+        />
+      </div>
+      <button id="simulate-delivery">Simular Entrega</button>
+
+
+      <div id="map"></div>
+  </div>
+      <div id="delivery-results" class="hide">
+        <div class="form-control">
+          <label for="delivery-status">Status de Entrega</label>
+          <input
+            type="text"
+            name="delivery-status"
+            id="delivery-status"
+            readonly
+          />
+        </div>
+        <div class="form-control">
+          <label for="delivery-cost">Valor da Entrega</label>
+          <input
+            type="text"
+            name="delivery-cost"
+            id="delivery-cost"
+            readonly
+          />
+        </div>
+      </div>
+    </form>
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_API&callback=initMap" async defer></script></body>
+</html>

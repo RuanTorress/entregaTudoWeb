@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora de Salário</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>Calculadora de Salário</h1>
+ 
+	<label for="salario">Salário:</label>
+<input type="number" id="salario" name="salario">
+ 
+	<button onclick="calcularSalario()">Calcular</button>
+ 
+	<p id="resultado"></p>
+ 
+	<script>
+		function calcularSalario() {
+			var salario = parseFloat(document.getElementById("salario").value);
+			var novoSalario = salario * 1.1;
+			document.getElementById("resultado").innerHTML = "O novo salário é: R$" + novoSalario.toFixed(2);
+		}
+</script>
+ 
+</body>
+</html>
